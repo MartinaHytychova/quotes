@@ -28,6 +28,7 @@ body {
 #app:before {
   display: block;
   transform-style: preserve-3d;
+  transform: translateZ(0);
   content: '';
   position: absolute;
   transition: 0.4s;
@@ -46,6 +47,7 @@ body {
   transition: 0.4s;
   content: '';
   transform-style: preserve-3d;
+  transform: translateZ(0);
   position: absolute;
   top: 0;
   left: 0;
@@ -56,15 +58,19 @@ body {
   box-sizing: border-box;
 }
 
+.inner-box {
+  transform: translateZ(0);
+}
+
 #app:hover .text {
-  transform: translate(10px, -50%) rotateY(20deg);
+  transform: translate(10px, -50%) rotateY(20deg) translateZ(0);
 }
 
 #app:hover::after,
 #app:hover::before {
-  transform: rotateY(-20deg);
+  transform: rotateY(-20deg) translateZ(0);
 }
 
 #app:hover .inner-box {
-  transform: rotateY(-20deg);
+  transform: rotateY(-20deg) translateZ(0);
 }
