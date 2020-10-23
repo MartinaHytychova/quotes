@@ -7,7 +7,7 @@
 }
 
 body {
-  background-color: #b71540;
+  background-color: #824547;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -62,7 +62,7 @@ body {
   transform: translateZ(0);
 }
 
-#app:hover .text {
+#app:hover .wrapper {
   transform: translate(10px, -50%) rotateY(20deg) translateZ(0);
 }
 
